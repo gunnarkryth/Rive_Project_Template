@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rive Frontend</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <script src="./scripts/socket/socketController.js" type="module"></script>
+    <script src="./scripts/socket/socketReceivers.js" type="module"></script>
+    <script src="./scripts/socket/socketEmitters.js" type="module"></script>
+    <script src="./scripts/rive/riveController.js" type="module"></script>
+    <script src="./scripts/rive/riveActions.js" type="module"></script>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <canvas id="canvas"></canvas>
+      <button id="feedButton">Feed Pet</button>
+    </div>
+  </body>
+</html>

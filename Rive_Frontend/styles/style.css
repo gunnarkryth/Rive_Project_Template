@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+      background-color: #313131;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #messages > li {
+    padding: 0.5rem 1rem;
+  }
+  #messages > li:nth-child(odd) {
+    background: #efefef;
+  }
+
+  .gridContainer {
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    width: 200px;
+    height: 40px;
+    border: solid 1px white;
+    color:white;
+    background-color: #333;
+    cursor: pointer;
+    margin: 16px;
+  }
+  button:hover {
+    color: #333;
+    background-color: #efefef;
+    border: solid 1px #333;
+  }
+  button:active {
+    outline: solid 1px white;
+  }
+
+  canvas {
+    margin-top: 5vh;
+    width: 100%;
+
+  }
