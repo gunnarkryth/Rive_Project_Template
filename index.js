@@ -49,7 +49,7 @@ io.sockets.on("connection", function (socket) {
 
   socket.on("feed", (data) => {
     if (hp < 90) {
-      hp = hp + 10;
+      hp = hp + 5;
     } else {
       hp = 101;
     }
