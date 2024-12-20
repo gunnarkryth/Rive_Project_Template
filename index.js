@@ -25,6 +25,7 @@ const io = new Server(server, {
 // set up an interval that updates the values
 let isSad = false;
 let hp = 100;
+let food = 5;
 
 console.log(hp);
 
@@ -48,8 +49,8 @@ io.sockets.on("connection", function (socket) {
   io.sockets.emit("greet", { message: "Server says hello" });
 
   socket.on("feed", (data) => {
-    if (hp < 95) {
-      hp = hp + 5;
+    if (hp < 90+food) {
+      hp = hp + food;
     } else {
       hp = 101;
     }
