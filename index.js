@@ -35,7 +35,7 @@ setInterval(() => {
     } else {
       isSad = false;
     }
-    hp = hp - 10;
+    hp = hp - 0.5;
     console.log(hp);
 
     io.sockets.emit("status", { sadness: isSad, health: hp });
