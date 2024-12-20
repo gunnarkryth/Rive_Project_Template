@@ -48,7 +48,7 @@ io.sockets.on("connection", function (socket) {
   io.sockets.emit("greet", { message: "Server says hello" });
 
   socket.on("feed", (data) => {
-    if (hp < 90) {
+    if (hp < 95) {
       hp = hp + 5;
     } else {
       hp = 101;
