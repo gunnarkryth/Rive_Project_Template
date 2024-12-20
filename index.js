@@ -26,6 +26,7 @@ const io = new Server(server, {
 let isSad = false;
 let hp = 100;
 let food = 5;
+let hour = 0.025
 
 console.log(hp);
 
@@ -36,7 +37,7 @@ setInterval(() => {
     } else {
       isSad = false;
     }
-    hp = hp - 0.025;
+    hp = hp - hour;
     console.log(hp);
 
     io.sockets.emit("status", { sadness: isSad, health: hp });
